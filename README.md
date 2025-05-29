@@ -1,1 +1,1 @@
-# Visualisations
+This repository contains data visualization from my thesis on how environmental factors—particularly rainfall and biome type—influence the change in diet of Hemigrammus marginatus, a widespread and omnivorous characin fish in Brazil as it moves from a humid(Atlantic forest) to a semi-arid Biome (Caatinga) in a bid to mimic future climate change scenarios when, due to some ecosystems like the Tropical rainforest getting drier, fishes are forced to depend on limited food resources for survival as terrestrial food resources wouldn't be as readily available
