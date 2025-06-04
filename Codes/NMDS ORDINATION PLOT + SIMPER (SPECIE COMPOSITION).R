@@ -6,13 +6,12 @@ vec<-c("CAATINGA","CAATINGA","CAATINGA","CAATINGA","CAATINGA","CAATINGA","CAATIN
 simper_result <- simper(species_data, vec)
 summary(simper_result)
 # Extract SIMPER result between Forest and Caatinga
-res <- simper_result[["CAATINGA_ATLANTIC"]]  # use the actual name shown by names(simper_result)
+res <- simper_result[["CAATINGA_ATLANTIC"]] 
 res_df <- as.data.frame(res)
 View(res_df)
 # Add species names as a column
 res_df$species <- rownames(res_df)
 top_species <- res_df[order(-res_df$average), ][1:10, ]
-
 
 nmds <- metaMDS(species_data, distance = "bray", k = 2, trymax = 100)
 
