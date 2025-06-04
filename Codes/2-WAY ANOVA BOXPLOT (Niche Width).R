@@ -8,13 +8,9 @@ Rainfall <- data_bp$Rainfall
 library(ggplot2)
 View(data_bp)
 
-getwd()
-
 #STAT ANALYSIS FOR THE NICHE WIDTH DEPENDENCE ON SEASON AND BIOME QUESTION
-anova(lm(Levins_index~Biome)) #DEPENDENT VARIABLE *INDEPENDENT VARIABLE
-
+anova(lm(Levins_index~Biome)) 
 anova(lm(Levins_index~Biome*Season))
-
 anova(lm(Levins_index ~ Rainfall + Biome))
 
 #Boxplot FOR THE ANOVA(NB~SB)
