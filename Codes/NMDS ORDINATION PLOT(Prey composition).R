@@ -3,7 +3,7 @@ prey <- read.csv("prey.csv")
 library(vegan)
 
 prey_df <- as.data.frame(prey)
-#TO Set the first column as row names and remove it from columns
+#Set the first column as row names and remove it from columns
 rownames(prey_df) <- prey_df[[1]]
 prey_df <- prey_df[, -1]  # Drop the 'Prey' column
 View(prey_df)
@@ -18,8 +18,8 @@ vec<-c("CAATINGA","CAATINGA","CAATINGA","CAATINGA","CAATINGA","CAATINGA","CAATIN
        "CAATINGA","CAATINGA","CAATINGA","CAATINGA","CAATINGA","CAATINGA",
        "ATLANTIC","ATLANTIC","ATLANTIC","ATLANTIC","ATLANTIC","ATLANTIC","ATLANTIC",
        "ATLANTIC","ATLANTIC")
-colors <- c("blue", "red")  # adjust for your groups
-group_colors <- colors[vec]  # assigns color to each point
+colors <- c("blue", "red")  
+group_colors <- colors[vec]  
 
 #NMDS ORDINATION PLOT
 plot(nmds$points, col = as.factor(vec), pch = 19)
